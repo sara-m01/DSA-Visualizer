@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a40, #2d2d80);
+  color: white;
+}
+
+.App {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #111133;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  color: #00cec9;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+select, button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #6c5ce7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a29bfe;
+}
+
+.bars-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px;
+  gap: 5px;
+}
+
+.bar {
+  width: 15px;
+  background-color: #00cec9;
+  transition: height 0.3s ease;
+}
